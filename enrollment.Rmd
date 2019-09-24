@@ -1,0 +1,21 @@
+---
+title: "class-2019-09-24"
+author: "Liz M."
+date: "9/24/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(readxl)
+library(tidyverse)
+```
+
+```{r}
+dir = "./class_enrollment_summary_by_term_9.17.19.xlsx" 
+enrollment <- read_xlsx(dir)
+print(enrollment)
+```
+
+
